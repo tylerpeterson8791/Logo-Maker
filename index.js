@@ -47,7 +47,7 @@ inquirer
     //throw error if not generated, also console.log message to user about colors 
     //otherwise console.log successful generation if it is generated
     //I'M NOT CALLING THE FUNCTION I WANT CORRECTLY
-    .then((response) => fs.writeFile("logo.svg", createLogo(response),
+    .then((response) => fs.writeFile("logo.svg", logoData,
         (err) => err ? (console.error(err),
             console.log("There was an error in generating your file.  Please check your color spelling, visit 147colors.com to reference available colors. Please try again!"))
 
