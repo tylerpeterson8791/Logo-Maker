@@ -1,8 +1,8 @@
 //require everything needed in
 const inquirer = require("inquirer");
 const fs = require("fs");
-const shapes = require("./lib/shapes.js");
-const shapesTest = require("./lib/shapes.test.js");
+const shapes = require("./classes/shapes.js");
+const shapesTest = require("./shapes.test.js");
 
 inquirer
     .prompt([
