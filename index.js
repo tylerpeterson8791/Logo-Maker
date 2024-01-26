@@ -29,3 +29,22 @@ WHEN I open the `logo.svg` file in a browser
 THEN I am shown a 300x200 pixel image that matches the criteria I entered
 
 */
+
+/* This should be an inquirer set of questions:
+
+Q1 What Letters do you want in your logo? (Up to 3 Letters)
+Use VALIDATE like I did in the last homework.  Tweak it for <= 3 letters or throw error.
+
+Q2 What Color Should Your Text Be
+Do I leave this open ended in an Input for User to type in?  Any safeguards for if they type nonsense or misspell a color?
+I could also limit them to a list of colors to avoid breaking.
+
+Q3 What Shape Should Your Logo Be?
+Straightforward list Circle, Square, Triangle.  Make sure to use VALUE here so it's easy to pass along
+
+Q4 What Color Do You Want the Shape to Be?
+Same potential issues as Q2.  Decide on input or list.
+
+.then use the shapes function from shapes.js with the responses as input and fs.WriteFile
+*/
+
