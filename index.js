@@ -4,6 +4,45 @@ const fs = require("fs");
 const shapes = require("./lib/shapes.js");
 const shapesTest = require("./lib/shapes.test.js");
 
+inquirer
+    .prompt([
+        {
+            type: "input",
+            message: "Which letters do you want the logo to display? (THREE CHARACTERS MAX)",
+            name: "logoLetters",
+            validate: logoLetters => {
+                if (logoLetters.length > 3) {
+                    return "THREE CHARACTERS MAX: Try Again"
+                    //forces user to input correctly  
+                    //when you do a return you don't need to do else
+                }
+                return true;
+            }
+        },
+        {
+            type: "input",
+            message: "What color do you want the letters to be? **For options visit https://147colors.com/",
+            name: "logoLettersColor",
+        },
+        {
+            type: "list",
+            message: "What shape do you want the logo to be?",
+            choices: [
+                { value: "Circle" },
+                { value: "Square" },
+                { value: "Triangle" },
+
+            ],
+            name: "logoShape",
+        },
+        {
+            type: "input",
+            message: "What color do you want the logo to be? **For options visit https://147colors.com/",
+            name: "logoColor",
+        },
+    ])
+
+    //start .then
 
 /*
 
