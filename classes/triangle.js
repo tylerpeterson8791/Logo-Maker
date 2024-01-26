@@ -1,4 +1,4 @@
-const shape = require('./shapes.js')
+const Shape = require('./shapes')
 
 class Triangle extends Shape {
     constructor(logoLetters, logoLettersColor, logoColor) {
@@ -12,4 +12,4 @@ class Triangle extends Shape {
         </svg>`
 }}
 
-module.exports = triangle
+module.exports = Triangle

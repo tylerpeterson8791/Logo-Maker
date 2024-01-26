@@ -1,6 +1,6 @@
-const shape = require('./shapes.js')
+const Shape = require('./shapes.js')
 
-class Circle extends shape {
+class Circle extends Shape {
     constructor(logoLetters, logoLettersColor, logoColor) {
         super(logoLetters, logoLettersColor, logoColor)
     }

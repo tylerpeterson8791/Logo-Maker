@@ -7,4 +7,6 @@ class Shape {
         this.logoColor = logoColor;
     }}
 
+    module.exports = Shape;
+
 

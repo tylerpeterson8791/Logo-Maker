@@ -1,7 +1,7 @@
 //require everything needed in
 const inquirer = require("inquirer");
 const fs = require("fs");
-const shapes = require("./classes/shapes.js");
+const createLogo = require("./createLogo.js");
 const shapesTest = require("./shapes.test.js");
 
 inquirer
@@ -42,6 +42,12 @@ inquirer
         },
     ])
 
+    .then(response => function createLogo(logoLetters, logoLettersColor, logoShape, logoColor) {
+        // WHAT GOES HERE????
+    })
+    .catch(error => {
+        console.error('Error: Please check spelling of color.  For choices visit https://147colors.com/ to see all option.  Please try again.', error);
+    });
     //How do these responses get passed and where do they need to get passed?  Just to createLogo?  Test that first.
 
 

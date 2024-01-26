@@ -1,4 +1,4 @@
-const shape = require('./shapes.js')
+const Shape = require('./shapes.js')
 
 class Square extends Shape {
     constructor(logoLetters, logoLettersColor, logoColor) {
@@ -13,4 +13,4 @@ class Square extends Shape {
     }
 }
 
-module.exports = square
+module.exports = Square
