@@ -42,15 +42,14 @@ inquirer
         },
     ])
 
-    .then(response => function createLogo(logoLetters, logoLettersColor, logoShape, logoColor) {
-        // WHAT GOES HERE????
+    //pass inquirer input values into createLogo function
+    .then(response => {
+        createLogo(response.logoLetters, response.logoLettersColor, response.logoShape, response.logoColor);
     })
     .catch(error => {
-        console.error('Error: Please check spelling of color.  For choices visit https://147colors.com/ to see all option.  Please try again.', error);
+        console.error('Error: Please try again.', error);
     });
-    //How do these responses get passed and where do they need to get passed?  Just to createLogo?  Test that first.
-
-
+    
 /*
 
 GIVEN a command-line application that accepts user input
