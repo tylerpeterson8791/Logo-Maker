@@ -1,9 +1,8 @@
 //require everything needed in
 const inquirer = require("inquirer");
 const fs = require("fs");
-const shapes = require("./lib/shapes.js");
-const shapesTest = require("./lib/shapes.test.js");
-const createLogo = require("./lib/shapes");
+const createLogo = require("./createLogo.js");
+const shapesTest = require("./shapes.test.js");
 
 inquirer
     .prompt([
@@ -43,22 +42,14 @@ inquirer
         },
     ])
 
-    //Use fs towrite the file to logo.svg.  
-    //Wrap response in shapes() function passing in responses.  This has been required in at top.
-    //throw error if not generated, also console.log message to user about colors 
-    //otherwise console.log successful generation if it is generated
-    //I'M NOT CALLING THE FUNCTION I WANT CORRECTLY
-    .then((response) => {
-        //create new variable with response wrapped in createLogo function from other js page
-        const logoData = createLogo(response);
-        fs.writeFile("logo.svg", logoData,
-            (err) => err ? (console.error(err),
-                console.log("There was an error in generating your file.  Please check your color spelling, visit 147colors.com to reference available colors. Please try again!"))
-
-                : console.log("Generated logo.svg"))
+    //pass inquirer input values into createLogo function
+    .then(response => {
+        createLogo(response.logoLetters, response.logoLettersColor, response.logoShape, response.logoColor);
     })
-
-
+    .catch(error => {
+        console.error('Error: Please try again.', error);
+    });
+    
 /*
 
 GIVEN a command-line application that accepts user input
