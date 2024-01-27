@@ -5,6 +5,7 @@ const fs = require('fs');
 
 //function to match logoShape to corresponding class file
 const createLogo = (logoLetters, logoLettersColor, logoShape, logoColor) => {
+    
     //declare this outside of the switch function for access later
     let shapeInstance;
 

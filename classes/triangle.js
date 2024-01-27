@@ -1,3 +1,4 @@
+//require parent class
 const Shape = require('./shapes')
 
 class Triangle extends Shape {
