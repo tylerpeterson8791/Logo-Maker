@@ -2,7 +2,6 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const createLogo = require("./createLogo.js");
-const shapesTest = require("./shapes.test.js");
 
 inquirer
     .prompt([
