@@ -21,7 +21,7 @@
 
   Once everything was set up I built out some tests to check rendering functionality to make sure the file was writing correctly.
 
-  Here's a video showing functionality of application while building an example logo: [Functionality Video](https://drive.google.com/file/d/1fHj16spz9hGi-VUZNNsP0QXkuhCvJucG/view?usp=drive_link)
+  Here's a video showing functionality of application while building an example logo: [Functionality Video](https://drive.google.com/file/d/1EjTogeJR14OxafQDW2bj6CvdWcgvUs7y/view?usp=sharing)
 
   ## Usage
   
